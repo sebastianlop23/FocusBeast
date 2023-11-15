@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32938F912B025F6200CC60A0 /* OverusedGrotesk-VF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32938F902B025F6200CC60A0 /* OverusedGrotesk-VF.ttf */; };
 		32971D182B0177E7009FF85A /* FocusBeastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32971D172B0177E7009FF85A /* FocusBeastApp.swift */; };
 		32971D1A2B0177E7009FF85A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32971D192B0177E7009FF85A /* ContentView.swift */; };
 		32971D1C2B0177E8009FF85A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32971D1B2B0177E8009FF85A /* Assets.xcassets */; };
 		32971D1F2B0177E8009FF85A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32971D1E2B0177E8009FF85A /* Preview Assets.xcassets */; };
+		32B0A1A82B028E3000137A39 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0A1A72B028E3000137A39 /* SettingsView.swift */; };
+		32B0A1AA2B028E4000137A39 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0A1A92B028E4000137A39 /* StatisticsView.swift */; };
+		32B0A1AC2B02A38300137A39 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B0A1AB2B02A38300137A39 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32938F902B025F6200CC60A0 /* OverusedGrotesk-VF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OverusedGrotesk-VF.ttf"; sourceTree = "<group>"; };
+		32938F922B02618900CC60A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		32971D142B0177E7009FF85A /* FocusBeast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusBeast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32971D172B0177E7009FF85A /* FocusBeastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusBeastApp.swift; sourceTree = "<group>"; };
 		32971D192B0177E7009FF85A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32971D1B2B0177E8009FF85A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32971D1E2B0177E8009FF85A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32B0A1A72B028E3000137A39 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		32B0A1A92B028E4000137A39 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		32B0A1AB2B02A38300137A39 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +60,15 @@
 		32971D162B0177E7009FF85A /* FocusBeast */ = {
 			isa = PBXGroup;
 			children = (
+				32938F922B02618900CC60A0 /* Info.plist */,
 				32971D172B0177E7009FF85A /* FocusBeastApp.swift */,
 				32971D192B0177E7009FF85A /* ContentView.swift */,
+				32938F902B025F6200CC60A0 /* OverusedGrotesk-VF.ttf */,
 				32971D1B2B0177E8009FF85A /* Assets.xcassets */,
 				32971D1D2B0177E8009FF85A /* Preview Content */,
+				32B0A1A72B028E3000137A39 /* SettingsView.swift */,
+				32B0A1A92B028E4000137A39 /* StatisticsView.swift */,
+				32B0A1AB2B02A38300137A39 /* HomeView.swift */,
 			);
 			path = FocusBeast;
 			sourceTree = "<group>";
@@ -127,6 +141,7 @@
 			files = (
 				32971D1F2B0177E8009FF85A /* Preview Assets.xcassets in Resources */,
 				32971D1C2B0177E8009FF85A /* Assets.xcassets in Resources */,
+				32938F912B025F6200CC60A0 /* OverusedGrotesk-VF.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				32971D1A2B0177E7009FF85A /* ContentView.swift in Sources */,
+				32B0A1AA2B028E4000137A39 /* StatisticsView.swift in Sources */,
+				32B0A1A82B028E3000137A39 /* SettingsView.swift in Sources */,
+				32B0A1AC2B02A38300137A39 /* HomeView.swift in Sources */,
 				32971D182B0177E7009FF85A /* FocusBeastApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +293,7 @@
 				DEVELOPMENT_TEAM = Q274FWZRLL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FocusBeast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +323,7 @@
 				DEVELOPMENT_TEAM = Q274FWZRLL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FocusBeast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
