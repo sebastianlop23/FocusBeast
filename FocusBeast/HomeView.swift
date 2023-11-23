@@ -9,6 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     @Environment(\.colorScheme) var colorScheme
+    @State private var showUnlock = false
+    @State private var didUnlock = false
+    
     var body: some View {
         ZStack {
             VStack {
@@ -53,20 +56,33 @@ struct HomeView: View {
                 Spacer()
                 
                 // Slider button (Custom component needed for functionality)
-                Button(action: {
-                    // Your action here
-                }) {
-                    Image(systemName: "arrow.down")
-                        .font(.system(size: 24))
-                        .foregroundColor(colorScheme == .dark ? .white : .black)
-                        .padding()
-                        .background(Color.white.opacity(colorScheme == .dark ? 0.5 : 0.5))
-                        .clipShape(Circle())
+                VStack {
+                    if showUnlock {
+                        SwipeToUnlockView()
+                            .onSwipeSuccess {
+                                self.didUnlock = true
+                                self.showUnlock = false
+                            }
+                    }
                 }
                 
                 Spacer()
                 
+                if didUnlock {
+                    ConfirmationView()
+                        
+                        .onAppear() {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3){
+                                self.didUnlock = false
+                                self.showUnlock = true
+                            }
+                        }
+                }
                 
+            }
+            
+            .onAppear() {
+                self.showUnlock = true
             }
             
             

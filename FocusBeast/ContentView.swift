@@ -44,13 +44,11 @@ struct ContentView: View {
                 
             SettingsView()
                 .tabItem { Image(systemName: "gearshape") }
-                .background(BackgroundView())
+                //.background(BackgroundView())
                 .tag(3)
         }
         .accentColor(.accent)
         
-            
-            
         
     }
 }
