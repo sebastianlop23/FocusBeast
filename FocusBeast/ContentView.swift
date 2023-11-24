@@ -23,7 +23,7 @@ struct BackgroundView: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
-        .blur(radius: 1)
+        .blur(radius: 7)
             
     }
 }
