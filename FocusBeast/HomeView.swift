@@ -69,14 +69,16 @@ struct HomeView: View {
                 Spacer()
                 
                 if didUnlock {
+                    FlipToStartView()
+                    /*
                     ConfirmationView()
-                        
                         .onAppear() {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 3){
                                 self.didUnlock = false
                                 self.showUnlock = true
                             }
                         }
+                     */
                 }
                 
             }

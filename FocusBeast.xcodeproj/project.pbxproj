@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322DEDA92B0F05C6007A5492 /* FlipToStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DEDA82B0F05C6007A5492 /* FlipToStartView.swift */; };
 		328503742B045B9B0036CF34 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328503722B045B9B0036CF34 /* ConfirmationView.swift */; };
 		328503752B045B9B0036CF34 /* SwipeToUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328503732B045B9B0036CF34 /* SwipeToUnlockView.swift */; };
 		32938F912B025F6200CC60A0 /* OverusedGrotesk-VF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32938F902B025F6200CC60A0 /* OverusedGrotesk-VF.ttf */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		322DEDA82B0F05C6007A5492 /* FlipToStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipToStartView.swift; sourceTree = "<group>"; };
 		328503722B045B9B0036CF34 /* ConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		328503732B045B9B0036CF34 /* SwipeToUnlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeToUnlockView.swift; sourceTree = "<group>"; };
 		32938F902B025F6200CC60A0 /* OverusedGrotesk-VF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OverusedGrotesk-VF.ttf"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				328503732B045B9B0036CF34 /* SwipeToUnlockView.swift */,
 				32B0A1A92B028E4000137A39 /* StatisticsView.swift */,
 				32B0A1AB2B02A38300137A39 /* HomeView.swift */,
+				322DEDA82B0F05C6007A5492 /* FlipToStartView.swift */,
 			);
 			path = FocusBeast;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				32B0A1AC2B02A38300137A39 /* HomeView.swift in Sources */,
 				32971D182B0177E7009FF85A /* FocusBeastApp.swift in Sources */,
 				328503752B045B9B0036CF34 /* SwipeToUnlockView.swift in Sources */,
+				322DEDA92B0F05C6007A5492 /* FlipToStartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
