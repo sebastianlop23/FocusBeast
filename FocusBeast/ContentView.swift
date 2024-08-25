@@ -29,35 +29,49 @@ struct BackgroundView: View {
 }
 
 struct ContentView: View {
-    @State private var selectedTab = 2
+    @State private var selectedTab = 2 //starting on 2nd tab
+    //@Binding var didUnlock: Bool
+    @State private var didUnlock = false
     var body: some View {
-        TabView(selection: $selectedTab){
-            StatisticsView()
-                .tabItem { Image(systemName: "chart.bar") }
-                .background(BackgroundView())
-                .tag(1)
+        NavigationView{
+            TabView(selection: $selectedTab){
+                StatisticsView()
+                    .tabItem { Image(systemName: "chart.bar") }
+                    .background(BackgroundView())
+                    .tag(1)
+                    
+                HomeView(didUnlock: .constant(false))
+                    .tabItem { Image(systemName: "house") }
+                    .background(BackgroundView())
+                    .tag(2)
+                    
+                SettingsView()
+                    .tabItem { Image(systemName: "gearshape") }
+                    //.background(BackgroundView())
+                    .tag(3)
+                FlipToStartView()
                 
-            HomeView()
-                .tabItem { Image(systemName: "house") }
-                .background(BackgroundView())
-                .tag(2)
-                
-            SettingsView()
-                .tabItem { Image(systemName: "gearshape") }
-                //.background(BackgroundView())
-                .tag(3)
+            }
+            .accentColor(.accent)
+            .onAppear{
+                if didUnlock{
+                    selectedTab = 4
+                }
+            }
+            
         }
-        .accentColor(.accent)
+        
         
         
     }
 }
 
 
-
+/*
 #Preview {
-    ContentView()
+    ContentView(didUnlock: .constant(false))
 }
+ */
 struct BackgroundView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
