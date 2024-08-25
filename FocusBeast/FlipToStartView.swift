@@ -52,7 +52,8 @@ struct FlipToStartView: View {
         
     }
 }
-
+/*
 #Preview {
     FlipToStartView()
 }
+*/

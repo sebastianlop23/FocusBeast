@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var showUnlock = false
-    @State private var didUnlock = false
+    @Binding var didUnlock: Bool
     
     var body: some View {
         ZStack {
@@ -67,10 +67,14 @@ struct HomeView: View {
                 }
                 
                 Spacer()
-                
+                NavigationLink(destination: FlipToStartView(), isActive: $didUnlock){
+                    EmptyView()
+                }
+                .hidden()
+                /*
                 if didUnlock {
-                    FlipToStartView()
-                    /*
+                    ContentView(didUnlock: $didUnlock)
+                    
                     ConfirmationView()
                         .onAppear() {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 3){
@@ -78,8 +82,9 @@ struct HomeView: View {
                                 self.showUnlock = true
                             }
                         }
-                     */
+                     
                 }
+                */
                 
             }
             
@@ -91,9 +96,9 @@ struct HomeView: View {
         }
     }
 }
-
+/*
 #Preview {
-    ContentView()
+    ContentView(didUnlock: .constant(false))
 }
-
+*/
 
